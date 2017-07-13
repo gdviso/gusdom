@@ -1,0 +1,63 @@
+@media (max-width: 800px) { 
+	.project{
+    	flex-direction: column;
+    	text-align: center;
+    	padding: 50px;
+	}
+	.project.reversed{
+		flex-direction: column-reverse;
+	}
+	.work .project .info, .work .project .preview{
+		width: 100%;
+	}
+	.work .project .preview img {
+    	max-width: 100%;
+		margin-bottom: 0 auto 20px;
+	}
+	.work .project .info .used{
+		justify-content: space-around;
+	}
+	.seeMore{
+		justify-content: center;
+	}
+}
+
+
+@media (max-width: 500px) { 
+ 	
+ 	section.contact .contactInfo p{
+ 		font-size: 18px;
+ 		padding: 0 20px;
+ 	}
+ 	.contact form{
+ 		width: 90%;
+ 	}
+ 	.social{
+ 		width: 90%;
+ 	}
+	.top {
+	 display: none;
+	}
+	.nav{
+		display: block;
+	}
+	.work .project{
+		margin: 0 20px 40px 20px;
+	}
+	.work .project .info .used{
+		justify-content: center;
+		flex-wrap: wrap;
+		span.accentBack{
+			    margin: 5px;
+		}
+	}
+	input.feedback-input, textarea.feedback-input{
+		min-width: 250px;
+	}
+	button.submit{
+		font-size: 22px;
+	}
+
+}
+
+

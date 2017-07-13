@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jobify</title>
+	<!-- font awesome --> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="public/styles/style.css">
+</head>
+<body>
+	<!-- Form --> 
+	<div class="formContainer animated fadeIn">
+		<h1>Jobify</h1>
+		<h3 class="tagline">Find your dream job in Canada</h3>
+		<form class="formMain">
+			<label for="location">Where?</label>
+			<input type="text" required placeholder="Ex: Toronto" name="location" id="location">
+			<label for="location">Keyword:</label>
+			<input type="text" required placeholder="Ex: Web Developer" name="title" id="title">
+			<div class="sub">
+				<button type="submit" class="submit">Find a job!</button>
+			</div>
+		</form>
+	</div>
+
+	<!-- Form for Minimized View / When Form Completes --> 
+	<div class="formContainerTop animated fadeIn" id="nav">
+		<h2>Jobify</h2>
+		<form class="formTop">
+			<label for="location">Where?</label>
+			<input type="text" required placeholder="Ex: Vancouver" name="location"  id="locationTop">
+			<label for="location">Keyword:</label>
+			<input type="text" required placeholder="Ex: Javascript" name="title"  id="titleTop">
+			<button type="submit" class="submit">Find a job!</button>
+		</form>
+	</div>
+
+		<div class="results"></div>
+		<div class="mapContainer">
+				<button class="closeMap"><i class="fa fa-times exit-modal"></i></button>
+			<div class="map">
+				<iframe frameborder="0"></iframe>
+			</div>	
+		</div>
+
+	<footer>
+		Created by <a href="http://www.caitlinchu.com">Caitlin Chu</a>, <a href="http://www.gusdom.com">Gustavo Dominguez</a>, and <a href="http://www.johndirstein.com">John Dirstein</a> using IndeedAPI
+	</footer>
+
+	<!-- Scripts --> 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAegBrQP91Sm1VWrf3tKfhmH9xCgAt9AJk"
+	async defer></script>
+	<script src="public/scripts/app.js"></script>
+</body>
+</html>
